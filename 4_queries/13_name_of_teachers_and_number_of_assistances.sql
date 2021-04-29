@@ -10,3 +10,10 @@ JOIN cohorts ON cohorts.id = students.cohort_id
 WHERE cohorts.name = 'JUL02'
 GROUP BY teachers.name, cohorts.name
 ORDER BY teachers.name;
+
+/* 
+Notes on GROUP BY:
+- Must have cohorts.name here because of aggregate function in SELECT?
+- Create one record for this unique pair (where these columns are the same)
+- Whatever you have in GROUP BY must be in select
+*/
